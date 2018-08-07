@@ -12,9 +12,9 @@ class Knowledge(Base):
 	subject = Column(String)
 	rating = Column(Integer)
 	def __repr__(self):
-		return ("If you want to learn about" + self.subject + ": {}\n"
-		"you should look at the Wikipedia article called" + self.wiki_name + ": {} \n"
-               "We gave this article a rating of" +self.rating +"out of 10: {}").format(
+		return ("If you want to learn about: {}\n"
+		"you should look at the Wikipedia article called: {} \n"
+               "We gave this article a rating {} out of 10").format(
                     self.subject, self.wiki_name, self.rating)
 	# Create a table with 4 columns
 	# The first column will be the primary key
